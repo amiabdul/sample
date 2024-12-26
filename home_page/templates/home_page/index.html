@@ -3,8 +3,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="{% static 'styles/styles.css' %}" />
   </head>
@@ -38,11 +36,14 @@
       </div>
       <div id="suggestion-box">
         <p id="first-box">
-          add your data <span><a href="">></a> </span>
+          add your data
+          <span><a href="{% url 'user-details' %}"> ></a></span>
         </p>
 
         <p id="second-box">
-          Secret suggestion Board<span><a href="">></a> </span>
+          Secret suggestion Board<span
+            ><a href="{% url 'suggestion' %}">></a>
+          </span>
         </p>
       </div>
     </section>

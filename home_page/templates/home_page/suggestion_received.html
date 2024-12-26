@@ -1,0 +1,14 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <title>Success Page</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}" />
+  </head>
+  <body>
+    <div class="success-message">
+      <h1>Success!</h1>
+      <p>Your suggestion has been successfully sent.</p>
+      <a href="{% url 'index' %}">Back to Home Page</a>
+    </div>
+  </body>
+</html>
